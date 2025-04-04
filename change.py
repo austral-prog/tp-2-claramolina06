@@ -1,15 +1,19 @@
 def change():
     expense = 23.75
     money = 100
-    
-    vuelto = money - expense
-    pesos = int(vuelto)
-    centavos = ((vuelto - pesos) * 100)
 
-    print(f"Ingresar gasto:\n {expense}")
-    print(f"Dinero recibido:\n {money}\n")
-    print("Vuelto\n")
-    print(f"Pesos:\n{pesos}")
-    print(f"Centavos:\n{centavos}")
+    print ("Ingresar gasto:")
+    print (expense)
+    print ("Dinero recibido")
+    print (money)
+    print ("\nVuelto\n")
+    print ("Pesos:")
+    vuelto=money-expense
+    pesos=int(vuelto)
+    print(pesos)
+    print("Centavos:")
+    centavos=vuelto-pesos
+    centavos_entero=int(centavos*100)
+    print(centavos_entero)
 
 change()
